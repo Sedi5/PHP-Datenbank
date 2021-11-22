@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Bezugskalkulation</title>	   
+   <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="../formatierung/stylesheet.css">
+</head>
+<body>
+  <h2>Eingaben: Bezugskalkulation<h2/>
+  <form action="http://localhost/index3.php" method="GET">
+  <table>
+  <tr>
+    <td><label for="menge">Menge</label></td>
+    <td><input type="text" name="menge" /></td>
+  </tr>
+  <tr>
+    <td><label for="einzelpreis">Einzelpreis</label></td>
+    <td><input type="text" name="einzelpreis" /></td>
+  </tr>
+  <tr>
+    <td><label for="rabatt">Rabattsatz</label></td>
+    <td><input type="radio" name="rabatt" value="null"/>0 %</td>
+	<td><input type="radio" name="rabatt" value="zehn"/>10 %</td>
+  </tr>
+   <tr>
+    <td><label for="skonto">Skontosatz</label></td>
+    <td><input type="radio" name="skonto" value="null"/>0 %</td>
+	<td><input type="radio" name="skonto" value="eins"/>1 %</td>
+	<td><input type="radio" name="skonto" value="zwei"/>2 %</td>
+	<td><input type="radio" name="skonto" value="drei"/>3 %</td>
+  </tr>
+   <tr>
+    <td><label for="fracht">Fracht</label></td>
+    <td><input type="text" name="fracht" /></td>
+  </tr>
+   <tr>
+    <td><label for="mehrwertsteuer">Mehrwertsteuer</label></td>
+    <td><input type="text" name="mehrwertsteuer" /></td>
+  </tr>
+  <tr>
+    <td><input type="submit" value="Abschicken" /></td>
+	<td><input type="reset" value="Reset" /></td>
+  </tr>
+  </table>
+  </form>
+</body>      
+</html>

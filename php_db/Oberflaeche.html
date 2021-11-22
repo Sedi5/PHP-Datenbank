@@ -7,43 +7,35 @@
 </head>
 <body>
   <form action="http://localhost/index3.php" method="GET">
-    <div class="container">
+  
+  <div class="container">
   <div class="dateneingabe">
-    <div class="lbprozessor">
-	<label for="prozessor">Prozessortakt in GHz</label>
+    <div class="label">
+	<label id="ptakt" for="prozessor">Prozessortakt in GHz</label>
+	<label id="speicher" for="arbeitsspeicher">Arbeitsspeicher in GB</label>
+	<label id="kapazitaet" for="kapazitaet">Festplattenkapazität in GB</label>
 	</div>
-    <div class="txtprozessor">
-	<input type="text" name="prozessor" />
+    <div class="text">
+	<input id="ptakt" type="text" name="prozessor" />
+	<input id="speicher" type="text" name="speicher" />
+	<input id="kapazitaet" type="text" name="volumen" />
 	</div>
-    <div class="lbarbeitsspeicher">
-	<label for="arbeitsspeicher">Arbeitsspeicher in GB</label>
-	</div>
-    <div class="txtarbeitsspeicher">
-	<input type="text" name="speicher" />
-	</div>
-    <div class="lbfestplattenk">
-	<label for="kapazitaet">Festplattenkapazität in GB</label>
-	</div>
-    <div class="txtfestplattenk">
-	<input type="text" name="volumen" />
-	</div>
-    <div class="btnHinzufuegen">
+    <div class="button">
 	<input type="submit" value="Hinzufügen" />
-	</div>
-    <div class="btndelete">
 	<input type="delete" value="Löschen" />
 	</div>
   </div>
   <div class="datenausgabe">
   <textarea id="ausgabe" name="ausgabe" rows="4" cols="5">
+
   </textarea>
   </div>
   <div class="header">
-  <h1>Eingaben: Bezugskalkulation<h1/>
+  <h1>PC-Verwaltung</h1>
   </div>
-  <div class="foot"> 
-  </div>
+  <div class="foot"></div>
 </div>
+
   </form>
 </body>      
 </html>
